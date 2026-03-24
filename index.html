@@ -12,40 +12,73 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕</text></svg>" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" id="i18n-skip">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
         <a class="logo" href="#" aria-label="AcesoAI home">AcesoAI</a>
-        <nav class="nav" aria-label="Primary">
-          <a href="#solutions">Solutions</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-right">
+          <nav class="nav" aria-label="Primary">
+            <a href="#solutions" id="i18n-nav-solutions">Solutions</a>
+            <a href="#contact" id="i18n-nav-contact">Contact</a>
+          </nav>
+          <div
+            class="lang-switch"
+            id="lang-switch"
+            role="group"
+            aria-label="Language"
+          >
+            <button
+              type="button"
+              class="lang-switch__btn"
+              data-locale="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              class="lang-switch__btn"
+              data-locale="zh-TW"
+              aria-pressed="false"
+            >
+              繁中
+            </button>
+            <button
+              type="button"
+              class="lang-switch__btn"
+              data-locale="ja"
+              aria-pressed="false"
+            >
+              日本語
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
     <main id="main">
       <section class="hero">
         <div class="hero-glow" aria-hidden="true"></div>
-        <p class="eyebrow">Agentic medical intelligence</p>
+        <p class="eyebrow" id="i18n-hero-eyebrow">Agentic medical intelligence</p>
         <h1 class="hero-title">
-          Care that listens,<br />
-          learns, and acts.
+          <span id="i18n-hero-title-1">Care that listens,</span><br />
+          <span id="i18n-hero-title-2">learns, and acts.</span>
         </h1>
-        <p class="hero-lead">
+        <p class="hero-lead" id="i18n-hero-lead">
           AcesoAI brings together real-time clinical conversation capture,
           evidence-based weight care, and a unified medical information layer —
           so teams spend less time on documentation and more time with patients.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:business@acesoai.pro">Talk to us</a>
-          <a class="btn btn-ghost" href="#solutions">Explore solutions</a>
+          <a class="btn btn-primary" href="mailto:business@acesoai.pro" id="i18n-hero-talk">Talk to us</a>
+          <a class="btn btn-ghost" href="#solutions" id="i18n-hero-explore">Explore solutions</a>
         </div>
       </section>
 
       <section id="solutions" class="section features">
         <header class="section-head">
-          <h2>Built for modern care delivery</h2>
-          <p>
+          <h2 id="i18n-features-h2">Built for modern care delivery</h2>
+          <p id="i18n-features-lead">
             Three integrated capabilities designed to feel invisible in the
             workflow — fast, private by design, and ready for your stack.
           </p>
@@ -67,21 +100,27 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Real-time speech &amp; summarization
+                <span id="i18n-f1-title">Real-time speech &amp; summarization</span>
               </a>
             </h3>
-            <p>
+            <p id="i18n-f1-body">
               Capture encounters as they happen. Streaming transcription and
               structured summaries help clinicians review, hand off, and code
               with clarity — without breaking eye contact with the patient.
             </p>
             <p class="feature-demo">
               <a
+                class="feature-demo-link"
+                id="feature-demo-speech"
                 href="https://medical.tcmwang.win"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Open real-time speech and summarization demo in a new tab"
               >
-                medical.tcmwang.win<span class="feature-demo-hint"> — live demo</span>
+                <span id="i18n-f1-demo">Live demo</span>
+                <svg class="feature-demo-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
               </a>
             </p>
           </li>
@@ -99,21 +138,27 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Weight control &amp; longitudinal support
+                <span id="i18n-f2-title">Weight control &amp; longitudinal support</span>
               </a>
             </h3>
-            <p>
+            <p id="i18n-f2-body">
               Agent-guided coaching that adapts to goals, medications, and
               lifestyle. Surface trends, nudges, and clinician-ready snapshots
               so obesity and metabolic care stay continuous, not episodic.
             </p>
             <p class="feature-demo">
               <a
+                class="feature-demo-link"
+                id="feature-demo-weight"
                 href="https://weight.tcmwang.win"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Open weight control demo in a new tab"
               >
-                weight.tcmwang.win<span class="feature-demo-hint"> — live demo</span>
+                <span id="i18n-f2-demo">Live demo</span>
+                <svg class="feature-demo-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7M7 7h10v10" />
+                </svg>
               </a>
             </p>
           </li>
@@ -124,8 +169,8 @@
                 <path d="M3 9h18M9 21V9" />
               </svg>
             </div>
-            <h3>Medical information system</h3>
-            <p>
+            <h3 id="i18n-f3-title">Medical information system</h3>
+            <p id="i18n-f3-body">
               A coherent view across encounters, devices, and protocols. Query
               what matters, reconcile discrepancies, and keep the record aligned
               with how your organization actually practices medicine.
@@ -137,23 +182,23 @@
       <section class="section band">
         <div class="band-inner">
           <blockquote class="band-quote">
-            <p>
+            <p id="i18n-band-quote">
               We believe the best medical AI disappears into the room — ambient,
               accurate, and accountable to the people it serves.
             </p>
-            <footer>— AcesoAI</footer>
+            <footer id="i18n-band-credit">— AcesoAI</footer>
           </blockquote>
         </div>
       </section>
 
       <section id="contact" class="section cta">
         <div class="cta-card">
-          <h2>Partner with AcesoAI</h2>
-          <p>
+          <h2 id="i18n-cta-h2">Partner with AcesoAI</h2>
+          <p id="i18n-cta-lead">
             Whether you are a health system, digital health company, or research
             group, we would like to hear what you are building.
           </p>
-          <a class="btn btn-primary btn-large" href="mailto:business@acesoai.pro">business@acesoai.pro</a>
+          <a class="btn btn-primary btn-large" href="mailto:business@acesoai.pro" id="i18n-cta-email">business@acesoai.pro</a>
         </div>
       </section>
     </main>
