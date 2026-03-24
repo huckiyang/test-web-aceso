@@ -302,6 +302,39 @@ body {
   line-height: 1.19048;
 }
 
+.feature-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.feature-title-link:hover {
+  color: var(--accent);
+}
+
+.feature-demo {
+  margin: 20px 0 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.feature-demo a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.feature-demo a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.feature-demo-hint {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
 .feature-card p {
   margin: 0;
   font-size: 17px;
